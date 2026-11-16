@@ -1,0 +1,75 @@
+#range-hide-extension {
+    margin: 0.5em 0;
+}
+
+#range-hide-extension .range-hide-description,
+#range-hide-extension .range-hide-note {
+    opacity: 0.8;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+#range-hide-extension .range-hide-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6em;
+    margin: 0.8em 0;
+}
+
+#range-hide-extension .range-hide-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    min-width: 0;
+}
+
+#range-hide-extension .range-hide-fields input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    min-height: 2.8em;
+}
+
+#range-hide-extension .range-hide-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+#range-hide-extension .range-hide-buttons button {
+    flex: 1 1 11em;
+    min-height: 2.8em;
+    white-space: normal;
+}
+
+#range-hide-extension .range-hide-info,
+#range-hide-extension .range-hide-status {
+    margin-top: 0.7em;
+    font-size: 0.9em;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+#range-hide-extension .range-hide-status[data-type="success"] {
+    color: var(--SmartThemeQuoteColor, #8bcf9b);
+}
+
+#range-hide-extension .range-hide-status[data-type="error"] {
+    color: var(--SmartThemeEmColor, #e58b8b);
+}
+
+@media (max-width: 480px) {
+    #range-hide-extension .range-hide-fields {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.45em;
+    }
+
+    #range-hide-extension .range-hide-buttons {
+        flex-direction: column;
+    }
+
+    #range-hide-extension .range-hide-buttons button {
+        width: 100%;
+        flex-basis: auto;
+    }
+}
