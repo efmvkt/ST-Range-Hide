@@ -1,0 +1,9 @@
+{
+  "display_name": "Range Hide — скрытие диапазона",
+  "loading_order": 20,
+  "js": "index.js",
+  "css": "style.css",
+  "author": "efmvkt",
+  "version": "1.0.0",
+  "homePage": "https://github.com/efmvkt/ST-Range-Hide/"
+}
